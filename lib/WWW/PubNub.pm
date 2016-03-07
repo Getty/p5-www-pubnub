@@ -8,8 +8,6 @@ use HTTP::Request;
 use JSON::MaybeXS;
 use WWW::PubNub::Message;
 
-our $VERSION ||= '0.000';
-
 has useragent => (
   is => 'lazy',
 );
