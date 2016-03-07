@@ -287,6 +287,14 @@ Subscribe key used for PubNub.
 
 Publish key used for PubNub. (Not supported yet)
 
+=head1 METHODS
+
+=head2 subscribe
+
+Takes a channel name or an arrayref of channel names as argument, followed by
+a coderef which gets called for every new message. After that a hash of
+arguments can be used to add additional coderefs for specific events:
+
 =head1 SPONSORING
 
 This distribution is sponsored by L<RealEstateCE.com|http://realestatece.com/>.
