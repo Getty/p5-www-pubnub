@@ -15,7 +15,7 @@ has useragent => (
 sub _build_useragent {
   my ( $self ) = @_;
   return LWP::UserAgent->new(
-    agent => 'WWW::PubNub/'.$VERSION,
+    agent => 'WWW::PubNub/'.$WWW::PubNub::VERSION,
     timeout => $self->timeout,
   );
 }
